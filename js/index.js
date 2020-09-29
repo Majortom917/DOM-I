@@ -53,8 +53,7 @@ anchors[5].textContent = 'Contact'
 
 //navBar.appendChild( siteContent['nav'][])
 //---------------------------------------------------------<<<
-const head1 = document.querySelector('h1')
-head1.textContent = 'DOM Is Awesome'
+const head1 = document.querySelector('h1').innerHTML = 'DOM<br> Is<br> Awesome'
 const button = document.querySelector('button')
 button.textContent = 'Get Started'
 
@@ -76,8 +75,21 @@ const head3 = document.querySelector('h4')
 head[1].textContent = 'about'
 
 para[1].textContent ='About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-//------------------------------------------------------------<<<<
 
+head[2].textContent = 'Services'
+para[2].textContent ='Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
-const section2 = document.querySelector(".text-content")
-section2.style.flexWrap ='wrap'
+head[3].textContent = 'Product'
+para[3].textContent ='Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+head[3].textContent = 'Vision'
+para[3].textContent ='Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+let moreCode = document.getElementById("middle-img");
+moreCode.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+head[5].textContent = 'Contact'
+para[5].innerHTML ='123 Way 456 Street <br> Somewhere, USA' 
+para[6].textContent ='1 (888) 888-8888'
+para[7].textContent ='sales@greatidea.io'
+const foot = document.querySelector('footer')
+foot.textContent ='Copyright Great Idea! 2018'
