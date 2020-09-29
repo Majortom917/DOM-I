@@ -41,14 +41,43 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//const navBar = document.querySelector('nav')
-//navBar.appendChild( siteContent['nav']['nav-item-1'])
+const navBar = document.querySelector('a')
+const anchors = document.querySelectorAll('a')
+anchors[0].textContent = 'Services'
+anchors[1].textContent = 'Product'
+anchors[2].textContent = 'Vision'
+anchors[3].textContent = 'Features'
+anchors[4].textContent = 'About'
+anchors[5].textContent = 'Contact'
+
+
+//navBar.appendChild( siteContent['nav'][])
+//---------------------------------------------------------<<<
 const head1 = document.querySelector('h1')
-
 head1.textContent = 'DOM Is Awesome'
-
 const button = document.querySelector('button')
-
 button.textContent = 'Get Started'
-let code = document.getElementById("code snippet");
-logo.setAttribute('src', siteContent["cta"]["img-src"])
+
+let code = document.getElementById("cta-img");
+code.setAttribute('src', siteContent["cta"]["img-src"])
+
+const section1 = document.querySelector('.cta-text')
+section1.style.textAlign ="center"
+
+const head2 = document.querySelector('h4')
+const head = document.querySelectorAll('h4') 
+head[0].textContent = 'Features'
+
+const para1 = document.querySelector('p')
+const para = document.querySelectorAll('p')
+para[0].textContent ='Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const head3 = document.querySelector('h4')
+head[1].textContent = 'about'
+
+para[1].textContent ='About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+//------------------------------------------------------------<<<<
+
+
+const section2 = document.querySelector(".text-content")
+section2.style.flexWrap ='wrap'
